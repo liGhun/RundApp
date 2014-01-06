@@ -1,0 +1,9 @@
+﻿<Window x:Class="RundApp.UserInterface.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="500" Width="800">
+    <Grid>
+        <TextBlock Text="Just an example - we'll show the timeline" HorizontalAlignment="Center" />
+        <ListView Name="listview_items" Margin="6,20,6,6" />
+    </Grid>
+</Window>
