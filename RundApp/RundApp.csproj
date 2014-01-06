@@ -34,11 +34,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AppNetDotNet">
-      <HintPath>..\..\AppNet.NET\AppNetDotNet\bin\Release\AppNetDotNet.dll</HintPath>
+    <Reference Include="AppNetDotNet, Version=1.8.2.0, Culture=neutral, PublicKeyToken=c5ee942792c9b1c6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libraries\AppNetDotNet.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\AppNet.NET\AppNetDotNet\bin\Release\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libraries\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="SnarlConnector, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -91,6 +93,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Libraries\AppNetDotNet.dll.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -101,6 +104,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Libraries\AppNetDotNet.dll" />
+    <Content Include="Libraries\AppNetDotNet.pdb" />
+    <Content Include="Libraries\Newtonsoft.Json.dll" />
+    <Resource Include="Libraries\Newtonsoft.Json.xml" />
     <Content Include="Libraries\SnarlConnector.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

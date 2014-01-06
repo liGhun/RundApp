@@ -17,7 +17,7 @@ namespace RundApp
         public MainWindow mainwindow;
 
         // enter your app details below
-        private string client_id = "Your one please...";
+        private string client_id = "Enter your one...";
         private string redirect_uri = "http://www.li-ghun.de/oauth/";
         private string scope = "basic stream write_post follow messages files update_profile";
 
